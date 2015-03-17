@@ -1,16 +1,19 @@
-function makeBold(id) {
+function uQuery(id){
   var target = document.getElementById(id);
-  target.style.fontWeight = "bold";
-  return target;
-}
 
-function makeRed(id) {
-  var target = document.getElementById(id);
-  target.style.color = "red";
-  return target;
-}
+  target.makeBold = function(target) {
+    this.style.fontWeight = "bold";
+    return this;
+  }
 
-function getValue(id) {
-  var target = document.getElementById(id);
-  return target.value;
+  target.makeRed = function(target) {
+    this.style.color = "red";
+    return this;
+  }
+
+  target.getValue = function(target) {
+    return this.value;
+  }
+
+  return target;
 }
