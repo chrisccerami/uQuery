@@ -1,5 +1,5 @@
 function uQuery(id){
-  var target = document.getElementById(id);
+  var target = document.getElementById(id.slice(1));
 
   target.makeBold = function(target) {
     this.style.fontWeight = "bold";
