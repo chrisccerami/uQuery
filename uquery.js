@@ -1,13 +1,11 @@
-function makeBold(selector) {
-  var target = document.getElementsByClassName(selector);
-  for (var i = 0, ii = target.length; i < ii; i++) {
-    target[i].style.fontWeight = "bold";
-  };
+function makeBold(id) {
+  var target = document.getElementById(id);
+  target.style.fontWeight = "bold";
+  return target;
 }
 
-function makeRed(selector) {
-  var target = document.getElementsByClassName(selector);
-  for (var i = 0, ii = target.length; i < ii; i++) {
-    target[i].style.color = "red";
-  };
+function makeRed(id) {
+  var target = document.getElementById(id);
+  target.style.color = "red";
+  return target;
 }
