@@ -17,3 +17,7 @@ function uQuery(id){
 
   return target;
 }
+
+function $(id) {
+  return uQuery(id);
+}
