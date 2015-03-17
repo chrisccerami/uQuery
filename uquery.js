@@ -9,3 +9,8 @@ function makeRed(id) {
   target.style.color = "red";
   return target;
 }
+
+function getValue(id) {
+  var target = document.getElementById(id);
+  return target.value;
+}
